@@ -129,7 +129,8 @@ function generateCards() {
             const email = employee.getEmail();
             const officeNumber = employee.getOfficeNumber();
             var managerCard = 
-            `<div class="card">
+            `
+            <div class="card">
                 <div class="card-body">
                 <div class="card-header bg-info">
                     <h5 class="card-title">${name}</h5>
@@ -143,7 +144,8 @@ function generateCards() {
                     </ul>
                 </div>
                 </div>
-            </div>`;
+            </div>
+            `;
             cardsArr.push(managerCard)
         } else if (employee.getRole() === "Engineer"){
             const name = employee.getName();
@@ -152,7 +154,8 @@ function generateCards() {
             const email = employee.getEmail();
             const github = employee.getGithub();
             var engineerCard = 
-            `<div class="card">
+            `
+            <div class="card">
                 <div class="card-body">
                 <div class="card-header bg-info">
                     <h5 class="card-title">${name}</h5>
@@ -166,7 +169,8 @@ function generateCards() {
                     </ul>
                 </div>
                 </div>
-            </div>`;
+            </div>
+            `;
             cardsArr.push(engineerCard)
         } else if (employee.getRole() === "Intern") {
             const name = employee.getName();
@@ -175,7 +179,8 @@ function generateCards() {
             const email = employee.getEmail();
             const school = employee.getSchool();
             var internCard = 
-            `<div class="card">
+            `
+            <div class="card">
                 <div class="card-body">
                 <div class="card-header bg-info">
                     <h5 class="card-title">${name}</h5>
@@ -189,7 +194,8 @@ function generateCards() {
                     </ul>
                 </div>
                 </div>
-            </div>`;
+            </div>
+            `;
             cardsArr.push(internCard)
         }
     })
@@ -216,10 +222,11 @@ function generateHTML(cardsArr) {
         <p class="lead">Welcome to the team! Names, roles, ID's, ofiice number and emails are listed below.</p>
         </div>
         <main>
-        <div class="card-group d-flex align-content-center justify-content-center text-center"></div>`;
+        <div class="card-group d-flex align-content-center justify-content-center text-center">`;
 
     const endingHTML = 
-        `</main>
+      `</div>
+      </main>
     </body>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
