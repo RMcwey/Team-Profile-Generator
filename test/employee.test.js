@@ -54,7 +54,7 @@ describe("Engineer class", () => {
   describe("validates github", () => {
     it("receives an input for github", () => {
       const engineer = new Engineer('Ross', '1', 'rmcwey@hotmail.com', 'RMcwey');
-      expect(engineer.getGithub()).toEqual('https://github.com/RMcwey');
+      expect(engineer.getGithub()).toEqual('RMcwey');
     });
   });
   describe("Gets role", () => {
