@@ -9,7 +9,7 @@
 * [Usage](#usage)
 * [Credits](#credits)
 * [Tests](#tests)
-* [Technologies](#techonologies)
+* [Technologies](#technologies)
 * [Questions](#questions)
 * [License](#license)
     
@@ -19,7 +19,7 @@
 - **What was your motivation?** To create a functional website that will house all current team members, their information and their roles.
 - **Why did you build this project?** To have something useful for my future endeavors
 - **What problem does it solve?** If I were to lose my contact info or forget someone's name, I have a place where I can reference the data.
-- **What did you learn?** I learned a lot about file system managment and how to interact with functions located in other files. I also learned how to creat a test suite and how to validate inquirer prompts.
+- **What did you learn?** I learned a lot about file system management and how to interact with functions located in other files. I also learned how to create a test suite and how to validate inquirer prompts.
 
 ## Installation
 
@@ -35,15 +35,24 @@
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+Click the following link to watch the walk-through video: https://drive.google.com/file/d/17hjowIC1IqI6Rkx1ze-cHE8ehi8gGWDz/view?usp=sharing
+
+![image](https://user-images.githubusercontent.com/95650769/158011508-f291d508-8e8f-4231-ae59-3e39833d61d6.png)
+
+![image](https://user-images.githubusercontent.com/95650769/158011537-24c0b5fa-a68f-4be1-94e9-8a94eec85339.png)
+
+![_C__Users_rmcwe_Github_Team-Profile-Generator_dist_sample html](https://user-images.githubusercontent.com/95650769/158011457-ff0dfa0d-45dc-4635-8e84-6fef89447d27.png)
+
+<br>
 
 ## Credits
 Ross McWey
 
 ## Tests
-To run tests, please folow the following steps:
+To run tests, please follow the following steps:
 1. Enter `npm install --save-dev jest` in the terminal in VS Code to install jest.
 2. Enter `npm run test` to run the tests.
+
 
 ## Technologies
 - HTML 
