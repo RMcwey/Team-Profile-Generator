@@ -7,23 +7,6 @@ body {
   background-attachment: fixed;
   opacity: 89%;
 }
-/* 
-#page-container {
-  position: fixed;
-  min-height: 100vh;
-} */
-/* .card {
-  justify-content: space-around;
-} */
-/* footer{
-  background: #e9ecef;
-  opacity: 89%;
-  text-align: center;
-  border-radius: 20px;
-  position: relative;
-  bottom: 0;
-  width: 100%;
-} */
 
 .card-columns {
   @include media-breakpoint-only(md) {
