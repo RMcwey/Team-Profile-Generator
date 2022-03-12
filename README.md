@@ -8,16 +8,18 @@
 * [Installation](#installation)
 * [Usage](#usage)
 * [Credits](#credits)
+* [Tests](#tests)
+* [Technologies](#techonologies)
 * [Questions](#questions)
 * [License](#license)
     
 
 ## Description 
 
-- What was your motivation? To create a functional website that will house all current team members, their information and their roles.
-- Why did you build this project? To have something useful for my future endeavors
-- What problem does it solve? If I were to lose my contact info or forget someone's name, I have a place where I can reference the data.
-- What did you learn? I learned a lot about file system managment and how to interact with functions located in other files. I also learned how to creat a test suite and how to validate inquirer prompts.
+- **What was your motivation?** To create a functional website that will house all current team members, their information and their roles.
+- **Why did you build this project?** To have something useful for my future endeavors
+- **What problem does it solve?** If I were to lose my contact info or forget someone's name, I have a place where I can reference the data.
+- **What did you learn?** I learned a lot about file system managment and how to interact with functions located in other files. I also learned how to creat a test suite and how to validate inquirer prompts.
 
 ## Installation
 
@@ -43,6 +45,17 @@ To run tests, please folow the following steps:
 1. Enter `npm install --save-dev jest` in the terminal in VS Code to install jest.
 2. Enter `npm run test` to run the tests.
 
+## Technologies
+- HTML 
+- CSS 
+- JavaScript
+- JQuery 
+- node.js
+- fs
+- inquirer
+- jest
+- bootstrap
+- fontawesome 
 
 ## Questions
 My Github page: https://github.com/RMcwey
