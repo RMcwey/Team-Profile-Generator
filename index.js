@@ -4,6 +4,7 @@ const fs = require('fs');
 const Manager = require('./lib/manager');
 const Engineer = require('./lib/engineer');
 const Intern = require('./lib/intern');
+const createHtml = require('./src/generateHTML');
 var team = []
 
 inquirer.prompt([
@@ -206,9 +207,9 @@ function generateHTML(cardsArr) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team Profile Generator</title>
-    <link rel="stylesheet" href="../dist/reset.css">
+    <link rel="stylesheet" href="../dist/assets/css/reset.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" href="./dist/style.css" />
+    <link rel="stylesheet" href="../dist/assets/css/style.css" />
   </head>
   <body>
     <div class="jumbotron text-center">
@@ -228,55 +229,9 @@ function generateHTML(cardsArr) {
 </html>`;
             cards = cardsArr.join(" ");
             const data = `${startingHTML} ${cards} ${endingHTML}`
-            fs.writeFile('index.html', `${data}`, (err) =>
+            fs.writeFile('./dist/index.html', `${data}`, (err) =>
             err ? console.error(err) : console.log('HTML is complete! Open in browser to see results!'));
 }
-
-
-
-
-//     }
-//     function generateEngineerCard() {
-//         team.forEach((engineer) => {
-//         const name = engineer.getName();
-//         const role = engineer.getRole();
-//         const id = engineer.getId();
-//         const email = engineer.getEmail();
-//         const github = engineer.getGithub();
-//         // console.log(name)
-//         })
-//     }
-// }
-//       const card = `<div class="card">
-// }
-
-// // function generateCard() {
-// //     let eName = engineerAnswers.engineerName;
-// //     let eId = engineerAnswers.engineerId;
-// //     let eEmail = engineerAnswers.engineerEmail;
-// //     let eGithub = engineerAnswers.engineerGithub;
-// //     let eRole = engineerAnswers.getRole()
-// //     return `<div class="card">
-// //     <div class="card-body">
-//       <div class="card-header bg-info">
-//         <h5 class="card-title">${eName}</h5>
-//         <h6 class="card-title">${eRole}</h6>
-//       </div>
-//       <div class="card">
-//         <ul class="list-group list-group-flush">
-//           <li class="list-group-item">ID: ${eId}</li>
-//           <li class="list-group-item">Email: <a href="mailto:${eEmail}">${eEmail}</a></li>
-//           <li class="list-group-item">Github: <a href="https://github.com/${eGithub}">github.com/${eGithub}</a></li>
-//         </ul>
-//       </div>
-//     </div>
-//   </div>`;
-//   fs.append
-// }
-
-// function generateManager(mgmtAnswers) {
-
-// }
 
 
 // const generateHTML = ({title, motivation, why, solve, learn, installation, url, collaborators, test, license, year, licenseCollaborators, github, email}, licenseResults) => {
