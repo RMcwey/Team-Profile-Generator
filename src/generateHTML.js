@@ -13,23 +13,22 @@ function generateCards(team) {
           const id = employee.getId();
           const email = employee.getEmail();
           const officeNumber = employee.getOfficeNumber();
-          var managerCard = 
-          `<div class="card">
-            <div class="card-body">
-              <div class="card-header bg-info">
-                <h5 class="card-title">${name}</h5>
-                <h6 class="card-title"><i class="fa-solid fa-briefcase"></i> ${role}</h6>
-              </div>
-              <div class="card">
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">ID: ${id}</li>
-                  <li class="list-group-item">Email: <a href="mailto:${email}">${email}</a></li>
-                  <li class="list-group-item">Office Number: ${officeNumber}</li>
-                </ul>
-              </div>
+          var managerCard = `
+        <div class="card col-lg-3">
+          <div class="card-body">
+            <div class="card-header bg-info">
+              <h5 class="card-title">${name}</h5>
+              <h6 class="card-title"><i class="fa-solid fa-briefcase"></i> ${role}</h6>
+            </div>
+            <div class="card">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">ID: ${id}</li>
+                <li class="list-group-item">Email: <a href="mailto:${email}">${email}</a></li>
+                <li class="list-group-item">Office Number: ${officeNumber}</li>
+              </ul>
             </div>
           </div>
-          `;
+        </div> `;
           cardsArr.push(managerCard)
       } else if (employee.getRole() === "Engineer"){
           const name = employee.getName();
@@ -38,22 +37,22 @@ function generateCards(team) {
           const email = employee.getEmail();
           const github = employee.getGithub();
           var engineerCard = 
-          `<div class="card">
-            <div class="card-body">
-              <div class="card-header bg-info">
-                <h5 class="card-title">${name}</h5>
-                <h6 class="card-title"><i class="fa-solid fa-glasses"></i> ${role}</h6>
-              </div>
-              <div class="card">
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">ID: ${id}</li>
-                  <li class="list-group-item">Email: <a href="mailto:${email}">${email}</a></li>
-                  <li class="list-group-item">Github: <a href="https://github.com/${github}">github.com/${github}</a></li>
-                </ul>
-              </div>
+          `
+        <div class="card col-lg-3">
+          <div class="card-body">
+            <div class="card-header bg-info">
+              <h5 class="card-title">${name}</h5>
+              <h6 class="card-title"><i class="fa-solid fa-glasses"></i> ${role}</h6>
+            </div>
+            <div class="card">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">ID: ${id}</li>
+                <li class="list-group-item">Email: <a href="mailto:${email}">${email}</a></li>
+                <li class="list-group-item">Github: <a href="https://github.com/${github}">github.com/${github}</a></li>
+              </ul>
             </div>
           </div>
-          `;
+        </div> `;
           cardsArr.push(engineerCard)
       } else if (employee.getRole() === "Intern") {
           const name = employee.getName();
@@ -62,22 +61,22 @@ function generateCards(team) {
           const email = employee.getEmail();
           const school = employee.getSchool();
           var internCard = 
-          `<div class="card">
-            <div class="card-body">
-              <div class="card-header bg-info">
-                <h5 class="card-title">${name}</h5>
-                <h6 class="card-title"><i class="fa-solid fa-graduation-cap"></i> ${role}</h6>
-              </div>
-              <div class="card">
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">ID: ${id}</li>
-                  <li class="list-group-item">Email: <a href="mailto:${email}">${email}</a></li>
-                  <li class="list-group-item">Currently attending: ${school}</li>
-                </ul>
-              </div>
+          `
+        <div class="card col-lg-3">
+          <div class="card-body">
+            <div class="card-header bg-info">
+              <h5 class="card-title">${name}</h5>
+              <h6 class="card-title"><i class="fa-solid fa-graduation-cap"></i> ${role}</h6>
+            </div>
+            <div class="card">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">ID: ${id}</li>
+                <li class="list-group-item">Email: <a href="mailto:${email}">${email}</a></li>
+                <li class="list-group-item">Currently attending: ${school}</li>
+              </ul>
             </div>
           </div>
-          `;
+        </div> `;
           cardsArr.push(internCard)
       }
   })
@@ -104,10 +103,11 @@ function generateHTML(cardsArr) {
     <p class="lead">Welcome to the team! Names, roles, ID's, ofiice number and emails are listed below.</p>
     </div>
     <main>
-      <div class="card-group d-flex align-content-center justify-content-center text-center">`;
+      <div class="card-columns d-flex align-content-center justify-content-center flex-wrap text-center">`;
 
     const endingHTML = 
-      `</div>
+      `
+        </div>
       </main>
     </body>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
